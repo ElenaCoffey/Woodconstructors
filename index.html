@@ -12,10 +12,10 @@ p    {color: #e3c5ba ; background-color:#6D7880 ;}
     #rabbits-song {background-color:#6d7880 ;color: #88b0cd ;}
     #rabbits-info-heading {background-color: #88b0cd ;}
     #container {
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   position: relative;
-  background: yellow;
+  background: blue;
 }
 #animate {
   width: 50px;
@@ -113,61 +113,12 @@ function myMove() {
     }
   }
 }
-  angleMode = "degrees";
-var backgroundColor = color(135, 206, 250);
-var sunColor = color(255, 255, 0);
-var sunStrokeColor = color(200, 200, 0);
-var sunDiameter = 100;
 
-var drawCloud = function() {
-    noStroke();
-    fill(255, 255, 255);
-    ellipse(0, 0, 126, 97);
-    ellipse(60, 0, 70, 60);
-    ellipse(-60, 0, 70, 60);
-};
 
-var drawSunRay = function() {
-    fill(sunColor);
-    noStroke();
-    triangle(0, 90, -40, 0, 40, 0);
-};
-
-var drawSun = function() {
-    //draw sun rays
-    for (var i=0; i <360; i+=30) 
-    {pushMatrix();
-    translate(200, 200);
-    rotate(i);
-    drawSunRay();
-    popMatrix();}
-    //draw center of sun
-    fill(sunColor);
-    stroke(sunStrokeColor);
-    ellipse(width/2, height/2, sunDiameter, sunDiameter);
-};
-
-//draw background
-background(backgroundColor);
-var scaleF=1.5;
-pushMatrix();
-
-//draw sun
-
-pushMatrix();
-translate (width/2 -scaleF*width/2 , height/2-scaleF*height/2);
-scale(scaleF);
-drawSun();
-popMatrix();
-//draw clouds
-pushMatrix();
-translate(282, 261);
-drawCloud();
-popMatrix();
 </script>
  
    
 <h2>End</h2>
-       document.body.innerHTML = "Woooo, I'm all up in your webpage!";
+       
 </body>
 </html>
