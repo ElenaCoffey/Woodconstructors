@@ -5,9 +5,13 @@
     <title>Canvas</title>
   </head>
   <body>
-
+<canvas class="myCanvas">
+  <p>Add suitable fallback here.</p>
+</canvas>
     <script>
-    
+    var canvas = document.querySelector('.myCanvas');
+var width = canvas.width = window.innerWidth;
+var height = canvas.height = window.innerHeight;
     </script>
   </body>
 </html>
