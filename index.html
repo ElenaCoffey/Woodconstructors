@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Canvas</title>
+    <title>MainMenu</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
    
 
@@ -11,65 +11,7 @@
   <!--Body starts-->
   
   <body>
-   
- <!--Draw canvas-->
-    
-<canvas class="myCanvas">
-  <p>Add suitable fallback here.</p>
-  
-</canvas>
-   
-<!--Canvas-->   
-   
-    <script>
-    var canvas = document.querySelector('.myCanvas');
-var width = canvas.width = window.innerWidth;
-var height = canvas.height = window.innerHeight;
-      
 
-      
-      
-      var ctx = canvas.getContext('2d');
-      ctx.fillStyle = 'rgb(0, 0, 0)';
-ctx.fillRect(0, 0, width, height);
-      ctx.fillStyle = 'rgb(255, 0, 0)';
-ctx.fillRect(50, 50, 100, 150);
-      ctx.fillStyle = 'rgb(0, 255, 0)';
-ctx.fillRect(75, 75, 100, 100);
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.25)';
-ctx.fillRect(25, 100, 50, 50);
-      ctx.fillStyle = 'rgba(0, 0, 200, 0.25)';
-ctx.fillRect(250, 100, 100, 70);
-      ctx.strokeStyle = 'rgb(255, 255, 255)';
-ctx.strokeRect(25, 25, 175, 200);
-      ctx.lineWidth = 10;
-      //triangle
-      function degToRad(degrees) {
-  return degrees * Math.PI / 180;
-};
-      ctx.fillStyle = 'rgb(255, 200, 0)';
-ctx.beginPath();
-ctx.moveTo(50, 50);
-     ctx.lineTo(150, 50);
-var triHeight = 50 * Math.tan(degToRad(60));
-ctx.lineTo(100, 50+triHeight);
-ctx.lineTo(50, 50);
-ctx.fill();
-      //circle
-      ctx.fillStyle = 'rgba(0, 0, 255, 75)';
-ctx.beginPath();
-ctx.arc(350, 306, 50, degToRad(0), degToRad(360), false);
-ctx.fill();
-      ctx.fillStyle = 'yellow';
-ctx.beginPath();
-ctx.arc(200, 106, 50, degToRad(-45), degToRad(45), true);
-ctx.lineTo(200, 106);
-      ctx.fill();
-//draw another circle
-      ctx.fill(255, 50, 150);
-      ctx.ellipse(150, 400, 50, 50);
-    </script>
-    
     
   </body>
 </html>
