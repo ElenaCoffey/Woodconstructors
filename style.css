@@ -25,7 +25,10 @@ body{
     background: #eee;
 }
 
-#page{ margin: 20px; }
+#page{ margin: 20px; 
+	width: 400px;
+         margin: auto;
+}
 
 #logo{
 	width: 35%;
