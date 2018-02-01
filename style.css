@@ -72,7 +72,10 @@ body{
 	clear: both;
 	border: 1px solid gray;
 }
-section { border: 1px solid gray;}
+section { 
+	border: 1px solid gray;
+	padding: 10px;
+}
 
 
 	footer p{
