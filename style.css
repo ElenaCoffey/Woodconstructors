@@ -32,6 +32,7 @@ body{
 	text-shadow: 2px 2px green;
 }
 /* but try and be as consist possible */
+#nav-links {margin-top:10px;}
 #nav{
 	width: 60%;
 	display: inline-block;
