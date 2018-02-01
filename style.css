@@ -33,7 +33,9 @@ body{
 #logo{
 	width: 35%;
 	margin-top: 5px;
+	font-family: georgia;
 	display: inline-block;
+        text-shadow: 0px 2px 2px green;
     
 }
 
