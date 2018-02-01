@@ -82,7 +82,7 @@ body{
 	}
 
 /* multiple styles seperated by a , */
-#content,
+
 ul li a{ box-shadow: 0px 1px 1px #999; }
 
 myHero {
@@ -94,4 +94,11 @@ myHero {
   }  
 #section {
 	margin-top: 15px;
+}
+#sectionarticles {
+	margin: 30px 0;
+	background: white;
+	padding: 20px;
+	clear: both;
+
 }
