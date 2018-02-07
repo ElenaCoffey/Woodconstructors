@@ -18,8 +18,7 @@ function draw() {
   //Create the HTML5 context object to enable draw methods
   var ctx = canvas.getContext("2d");
   //Draw gradient rectangles
-	/*ctx.fillStyle="rgba (0, 150, 0, .07);
-	ctx.fillRect(0, 200, 100, 100);*/
+	
 	
 	
 	
@@ -54,6 +53,12 @@ function draw() {
   ctx.lineTo(150, 70);
   ctx.lineTo(135, 40);
   ctx.fill(); 
+	//draw gradient rectangles
+	
+	ctx.fillStyle = "rgba (0, 150, 0, .7);
+	ctx.fillRect(0, 200, 100, 100);
+	
+	
 }
 	//drawing into second canvas
 	function draw2 (x, y) {
