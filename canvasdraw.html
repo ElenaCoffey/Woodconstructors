@@ -67,6 +67,21 @@ function draw() {
 	ctx.fillRect(0, 150, 100, 100);
         ctx.strokeRect(0, 150, 100, 100);
 	
+	//second box with gradient
+	
+	var g2 =  ctx.createLinearGradient(0, 0, 100, 0);
+	ctx.fillStyle="rgba(0, 0, 200, .3)";
+	g2.addColorStop(0, "orange");//color stop beginning
+	g2.addColorStop(0.5, "blue");//color stop end
+	g2.addColorStop(1, "brown");//color stop end
+	
+	ctx.fillStyle = g2;
+	ctx.strokeStyle = "blue";
+	ctx.lineWidth = 5;
+       //fillRect(X, Y, width, height);
+	ctx.fillRect(120, 150, 100, 100);
+        ctx.strokeRect(120, 150, 100, 100);
+	
 	
 }
 	//drawing into second canvas
