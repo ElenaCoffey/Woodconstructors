@@ -54,12 +54,16 @@ function draw() {
   ctx.lineTo(135, 40);
   ctx.fill(); 
 	//draw gradient rectangles
+	var g1 =  ctx.createLinearGradient(5, 150, 155, 0);
 	ctx.fillStyle="rgba(0, 0, 200, .3)";
+	g1.addColorstop(0, "purple");//color stop beginning
+	g1.addColorstop(1, "black");//color stop end
+	ctx.fillStyle = g1;
 	ctx.strokeStyle = "yellow";
 	ctx.lineWidth = 10;
        //fillRect(X, Y, width, height);
-	ctx.fillRect(36, 150, 100, 100);
-        ctx.strokeRect(36, 150, 100, 100);
+	ctx.fillRect(5, 150, 100, 100);
+        ctx.strokeRect(5, 150, 100, 100);
 	
 	
 }
