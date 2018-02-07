@@ -14,7 +14,8 @@ window.onload = draw; //Execute draw function when DOM is ready
 function draw() {
   //Assign our canvas element to a variable
   var canvas = document.getElementById("canvas1")
-  
+  var canvastwo = document.getElementById("canvas2")//reference the canvas on page	
+	var ctx2 = canvastwo.getContext("2d"); //establish a 2D context for the canvas
   //Create the HTML5 context object to enable draw methods
   var ctx = canvas.getContext("2d");
   
@@ -52,15 +53,14 @@ function draw() {
 }
 	//drawing into second canvas
 	function draw (x, y) {
-	var canvastwo = document.getElementById("canvas2")//reference the canvas on page	
-	var ctx2 = canvastwo.getContext("2d"); //establish a 2D context for the canvas
+	
 	ctx2.save(); // save the canvas state if required
 	ctx2.clearRect(0, 0, 550, 400);	 //clear the canvas for redraw
 	ctx2.fillStyle =  "rgba ( 0, 200, 0, 1)";//style for a green box
 	ctx2.fillRect (x, 20, 50, 50);//draw rectangle
 	ctx2.restore();	//restore the canvas state
 	x += 1;	//increment the x position by some number
-	var loopTimer = setTimeout ('draw ('+x+', '+y+')', 20);
+	var loopTimer = setTimeout ('draw ('+x+', '+y+')', 200);
 	}
 </script>
 </head>
