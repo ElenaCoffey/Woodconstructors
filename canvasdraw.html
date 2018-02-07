@@ -15,12 +15,20 @@ function draw() {
   ctx.fillStyle="rgba(0, 0, 200, 1)";
   //fillRect(X, Y, width, height);
   ctx.fillRect(36, 50, 22, 22);
+  //drawing triangular
   ctx.beginPath();
-  ctx.moveto(100, 50);
+  ctx.moveTo(100, 50);
   ctx.lineTo(130, 100);
   ctx.lineTo(70, 100);
   ctx.fill();
-  
+  // another shape
+  ctx.beginPath();
+  ctx.moveTo(72, 60);
+  ctx.lineTo(85, 72);
+  ctx.lineTo(71, 94);
+  ctx.lineTo(50, 70);
+  ctx.lineTo(65, 40);
+  ctx.fill();
 }
 </script>
 </head>
