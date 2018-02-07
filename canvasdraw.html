@@ -51,7 +51,7 @@ function draw() {
   ctx.fill(); 
 }
 	//drawing into second canvas
-	function draw (x, y) {
+	function draw2 (x, y) {
 	var canvastwo = document.getElementById("canvas2")//reference the canvas on page	
 	var ctx2 = canvastwo.getContext("2d"); //establish a 2D context for the canvas
 	ctx2.save(); // save the canvas state if required
@@ -98,7 +98,7 @@ function draw() {
   <canvas id="canvas2" width = "400" height="300"></canvas>
 	
 	<!--Button for canvas#2-->
-<button onclick="draw(0, 0);">Animate the drawing</button>	
+<button onclick="draw2(0, 0);">Animate the drawing</button>	
 	<!-- FOOTER -->
 	</div>
 		<!--Footer-->
