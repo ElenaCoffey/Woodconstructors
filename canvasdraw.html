@@ -83,7 +83,8 @@ function draw() {
         ctx.strokeRect(120, 150, 100, 100);
 	
 	//third box with circular gradient
-	var g3 =  ctx.createRadialGradient(120, 150, 220, 150, 100, 200);
+	
+	var g3 =  ctx.createRadialGradient(225, 150, 0, 225, 150, 175);
 	ctx.fillStyle="rgba(0, 0, 200, .3)";
 	g3.addColorStop(0, "orange");//color stop beginning
 	g3.addColorStop(1, "brown");//color stop end
