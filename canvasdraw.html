@@ -54,10 +54,11 @@ function draw() {
   ctx.lineTo(135, 40);
   ctx.fill(); 
 	//draw gradient rectangles
-	ctx.fillStyle="rgba(0, 0, 200, 1)";
-  //fillRect(X, Y, width, height);
-  ctx.fillRect(36, 150, 100, 100);
-
+	ctx.fillStyle="rgba(0, 0, 200, .3)";
+	ctx.strokeStyle = "yellow";
+       //fillRect(X, Y, width, height);
+	ctx.fillRect(36, 150, 100, 100);
+        ctx.strokeRect(36, 150, 100, 100);
 	
 	
 }
@@ -75,6 +76,7 @@ function draw() {
 	var loopTimer = setTimeout ('draw2 ('+x+', '+y+')', 10);
 		//https://www.youtube.com/watch?v=hUCT4b4wa-8
 	}
+	
 </script>
 </head>
   
