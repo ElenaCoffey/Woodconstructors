@@ -20,7 +20,8 @@ function draw() {
   ctx.moveTo(100, 50);
   ctx.lineTo(130, 100);
   ctx.lineTo(70, 100);
-  ctx.fill();
+  ctx.closePath();
+  ctx.stroke();
   // another shape
   ctx.beginPath();
   ctx.moveTo(72, 60);
