@@ -129,7 +129,12 @@ function draw() {
 	ctx2.stroke();	
 	
 	}
+	//drawing into third canvas
 	
+	function draw3 (x, y) {
+	var canvasthree = document.getElementById("canvas3")//reference the canvas on page	
+	var ctx3 = canvastwo.getContext("2d"); //establish a 2D context for the canvas
+	}
 </script>
 </head>
   
@@ -163,11 +168,12 @@ function draw() {
   <!--1st canvas -->
 <canvas id="canvas1" width = "400" height="300"></canvas>
   <!--2nd canvas -->
-  <canvas id="canvas2" width = "400" height="300"></canvas>
-	
+<canvas id="canvas2" width = "400" height="300"></canvas>
 	<!--Button for canvas#2-->
-<button onclick="draw2(0, 0);">Animate the drawing</button>	
-	<!-- FOOTER -->
+<button onclick="draw2(0, 0);">Animate the drawing</button>
+	<!--3rd canvas -->
+<canvas id="canvas3" width = "400" height="300"></canvas>
+	
 	</div>
 		<!--Footer-->
 		
