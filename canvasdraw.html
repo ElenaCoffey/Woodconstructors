@@ -87,7 +87,7 @@ function draw() {
 	
 	//third box with circular gradient
 	
-	var g3 =  ctx.createRadialGradient(230, 250, 280, 330, 150, 200);
+	var g3 =  ctx.createRadialGradient(230, 150, 280, 230, 150, 200);
 	ctx.fillStyle="rgba(0, 0, 200, .3)";
 	g3.addColorStop(0, "orange");//color stop beginning
 	g3.addColorStop(1, "brown");//color stop end
@@ -97,6 +97,8 @@ function draw() {
        //fillRect(X, Y, width, height);
 	ctx.fillRect(230, 150, 100, 100);
         ctx.strokeRect(230, 150, 100, 100);
+	
+	//forth box with leather pattern and gradient border/stroke
 	
 	var pattern = ctx.createPattern(leather, "repeat");
 	ctx.fillStyle = pattern;
