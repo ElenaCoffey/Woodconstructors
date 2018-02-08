@@ -10,24 +10,28 @@
 	
 <script type="application/javascript" language="javascript">
 	
-window.onload =draw;
+window.onload = draw; //Execute draw function when DOM is ready
 	//Creating leather pattern
 	var leather = new Image();
 	leather.src = "https://user-images.githubusercontent.com/34121390/35948226-6bd7e9c6-0c20-11e8-8706-240ff1d4d46d.png";
-//Funciton #1
-   function draw() {
+function draw() {
   //Assign our canvas element to a variable
   var canvas = document.getElementById("canvas1");
   
   //Create the HTML5 context object to enable draw methods
   var ctx = canvas.getContext("2d");
-	   
-  //Draw gradient rectangles	
-  ctx.fillStyle="rgba(0, 200, 0, 1)"; //fillStyle(r, g, b, alpha);
-  ctx.fillRect(36, 10, 22, 22);//fillRect(X, Y, width, height);
+  //Draw gradient rectangles
+	
+	
+	
+	
+  //fillStyle(r, g, b, alpha);
+  ctx.fillStyle="rgba(0, 200, 0, 1)";
+  //fillRect(X, Y, width, height);
+  ctx.fillRect(36, 10, 22, 22);
   ctx.fillStyle="rgba(0, 0, 200, 1)";
-  ctx.fillRect(36, 50, 22, 22); //fillRect(X, Y, width, height);
-	   
+  //fillRect(X, Y, width, height);
+  ctx.fillRect(36, 50, 22, 22);
   //drawing triangular
   ctx.beginPath();
   ctx.moveTo(100, 50);
@@ -62,7 +66,8 @@ window.onload =draw;
 	ctx.fillStyle = g1;
 	ctx.strokeStyle = "yellow";
 	ctx.lineWidth = 10;
-	ctx.fillRect(0, 150, 100, 100);//fillRect(X, Y, width, height);
+       //fillRect(X, Y, width, height);
+	ctx.fillRect(0, 150, 100, 100);
         ctx.strokeRect(0, 150, 100, 100);
 	
 	//second box with gradient
@@ -90,7 +95,8 @@ window.onload =draw;
 	ctx.fillStyle = g3;
 	ctx.strokeStyle = "blue";
 	ctx.lineWidth = 5;
-	ctx.fillRect(230, 150, 100, 100);//fillRect(X, Y, width, height);
+       //fillRect(X, Y, width, height);
+	ctx.fillRect(230, 150, 100, 100);
         ctx.strokeRect(230, 150, 100, 100);
 	
 	//forth box with leather pattern and gradient border/stroke
@@ -104,26 +110,6 @@ window.onload =draw;
 	ctx.fill();
 	
 }
-	window.onload =draw2;
-	//drawing into second canvas
-	function draw2 (x, y) {
-	var canvastwo = document.getElementById("canvas2")//reference the canvas on page	
-	var ctx2 = canvastwo.getContext("2d"); //establish a 2D context for the canvas
-	ctx2.save(); // save the canvas state if required
-	ctx2.clearRect(0, 0, 550, 400);	 //clear the canvas for redraw
-	
-	ctx2.fillStyle="rgba(0, 200, 70, 0.5)";//style for a green box
-	ctx2.fillRect (x, 20, 50, 50);//draw rectangle
-	
-	
-	ctx2.restore();	//restore the canvas state
-	x += 1;	//increment the x position by some number
-	var loopTimer = setTimeout ('draw2 ('+x+', '+y+')', 10);
-		//https://www.youtube.com/watch?v=hUCT4b4wa-8
-	ctx2.arc(x, 150, 60, 0, Math.PI*2, false);
-	ctx2.stroke();	
-	
-	}
 	//drawing into third canvas
 	
 window.onload =draw3;
