@@ -131,9 +131,11 @@ function draw() {
 	}
 	//drawing into third canvas
 	
-	function draw3 (x, y) {
+	function draw3 () {
 	var canvasthree = document.getElementById("canvas3")//reference the canvas on page	
 	var ctx3 = canvastwo.getContext("2d"); //establish a 2D context for the canvas
+	ctx3.font = "italic bold 56px Arial, sans-serif";
+	ctx3.fillText("Text On Canvas", 50, 50);	
 	}
 </script>
 </head>
