@@ -11,6 +11,9 @@
 <script type="application/javascript" language="javascript">
 	
 window.onload = draw; //Execute draw function when DOM is ready
+	//Creating leather pattern
+	var leather = new Image();
+	leather.src = "https://user-images.githubusercontent.com/34121390/35948226-6bd7e9c6-0c20-11e8-8706-240ff1d4d46d.png";
 function draw() {
   //Assign our canvas element to a variable
   var canvas = document.getElementById("canvas1");
@@ -95,6 +98,13 @@ function draw() {
 	ctx.fillRect(230, 150, 100, 100);
         ctx.strokeRect(230, 150, 100, 100);
 	
+	var pattern = ctx.createPattern(leather, "repeat");
+	ctx.fillStyle = pattern;
+	ctx.fillRect(200, 10, 100, 100);
+	ctx.lineWidth = 20;
+	ctx.strokeStyle = g3;
+        ctx.strokeRect(200, 10, 100, 100);
+	ctx.fill();
 	
 }
 	//drawing into second canvas
