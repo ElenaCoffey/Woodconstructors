@@ -22,7 +22,10 @@ function draw() {
   var ctx = canvas.getContext("2d");
   //Draw gradient rectangles
 	
- //fillStyle(r, g, b, alpha);
+	
+	
+	
+  //fillStyle(r, g, b, alpha);
   ctx.fillStyle="rgba(0, 200, 0, 1)";
   //fillRect(X, Y, width, height);
   ctx.fillRect(36, 10, 22, 22);
@@ -36,22 +39,103 @@ function draw() {
   ctx.lineTo(70, 100);
   ctx.closePath();
   ctx.stroke();
+  // another shape
+  ctx.beginPath();
+  ctx.moveTo(72, 60);
+  ctx.lineTo(85, 72);
+  ctx.lineTo(71, 94);
+  ctx.lineTo(50, 70);
+  ctx.lineTo(65, 40);
+  ctx.fillStyle="rgba(200, 36, 70, 0.5)";
+  ctx.fill();
+  //another shape for the logo, the ear
+  ctx.beginPath();
+  ctx.moveTo(128, 60);
+  ctx.lineTo(115, 72);
+  ctx.lineTo(128, 94);
+  ctx.lineTo(150, 70);
+  ctx.lineTo(135, 40);
+  ctx.fill(); 
+	//draw gradient rectangles
+	var g1 =  ctx.createLinearGradient(0, 0, 100, 0);
+	ctx.fillStyle="rgba(0, 0, 200, .3)";
+	g1.addColorStop(0, "blue");//color stop beginning
+	g1.addColorStop(0.5, "red");//color stop end
+	g1.addColorStop(1, "black");//color stop end
 	
+	ctx.fillStyle = g1;
+	ctx.strokeStyle = "yellow";
+	ctx.lineWidth = 10;
+       //fillRect(X, Y, width, height);
+	ctx.fillRect(0, 150, 100, 100);
+        ctx.strokeRect(0, 150, 100, 100);
 	
+	//second box with gradient
 	
- 
+	var g2 =  ctx.createLinearGradient(120, 150, 220, 150);
+	ctx.fillStyle="rgba(0, 0, 200, .3)";
+	g2.addColorStop(0, "orange");//color stop beginning
+	g2.addColorStop(0.5, "blue");//color stop end
+	g2.addColorStop(1, "brown");//color stop end
+	
+	ctx.fillStyle = g2;
+	ctx.strokeStyle = "blue";
+	ctx.lineWidth = 5;
+       //fillRect(X, Y, width, height);
+	ctx.fillRect(120, 150, 100, 100);
+        ctx.strokeRect(120, 150, 100, 100);
+	
+	//third box with circular gradient
+	
+	var g3 =  ctx.createRadialGradient(285, 200, 25, 285, 200, 150);
+	ctx.fillStyle="rgba(0, 0, 200, .3)";
+	g3.addColorStop(0, "orange");//color stop beginning
+	g3.addColorStop(0.5, "blue");//color stop beginning
+	g3.addColorStop(1, "brown");//color stop end
+	ctx.fillStyle = g3;
+	ctx.strokeStyle = "blue";
+	ctx.lineWidth = 5;
+       //fillRect(X, Y, width, height);
+	ctx.fillRect(230, 150, 100, 100);
+        ctx.strokeRect(230, 150, 100, 100);
+	
+	//forth box with leather pattern and gradient border/stroke
+	
+	var pattern = ctx.createPattern(leather, "repeat");
+	ctx.fillStyle = pattern;
+	ctx.fillRect(200, 10, 100, 100);
+	ctx.lineWidth = 20;
+	ctx.strokeStyle = g3;
+        ctx.strokeRect(200, 10, 100, 100);
+	ctx.fill();
+	
 }
+	//drawing into second canvas
+	function draw2 (x, y) {
+	var canvastwo = document.getElementById("canvas2")//reference the canvas on page	
+	var ctx2 = canvastwo.getContext("2d"); //establish a 2D context for the canvas
+	ctx2.save(); // save the canvas state if required
+	ctx2.clearRect(0, 0, 550, 400);	 //clear the canvas for redraw
+	
+	ctx2.fillStyle="rgba(0, 200, 70, 0.5)";//style for a green box
+	ctx2.fillRect (x, 20, 50, 50);//draw rectangle
+	
+	
+	ctx2.restore();	//restore the canvas state
+	x += 1;	//increment the x position by some number
+	var loopTimer = setTimeout ('draw2 ('+x+', '+y+')', 10);
+		//https://www.youtube.com/watch?v=hUCT4b4wa-8
+	ctx2.arc(x, 150, 60, 0, Math.PI*2, false);
+	ctx2.stroke();	
+	
+	}
 	//drawing into third canvas
 	
-window.onload =draw3;
 	function draw3 () {
 	var canvasthree = document.getElementById("canvas3")//reference the canvas on page	
 	var ctx3 = canvasthree.getContext("2d"); //establish a 2D context for the canvas
-	/*ctx3.fillStyle = '#F064';
-	ctx3.font = "italic bold 20px Arial, sans-serif";
-	ctx3.fillText("Text On Canvas", 50, 50);
-		
-	ctx3.strokeText ("Text On Canvas", 50, 50);*/	
+	ctx3.font = "italic bold 56px Arial, sans-serif";
+	ctx3.fillText("Text On Canvas", 50, 50);	
 	}
 </script>
 </head>
