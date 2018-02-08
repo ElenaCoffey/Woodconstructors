@@ -110,34 +110,17 @@ function draw() {
 	ctx.fill();
 	
 }
-	//drawing into second canvas
-	function draw2 (x, y) {
-	var canvastwo = document.getElementById("canvas2")//reference the canvas on page	
-	var ctx2 = canvastwo.getContext("2d"); //establish a 2D context for the canvas
-	ctx2.save(); // save the canvas state if required
-	ctx2.clearRect(0, 0, 550, 400);	 //clear the canvas for redraw
-	
-	ctx2.fillStyle="rgba(0, 200, 70, 0.5)";//style for a green box
-	ctx2.fillRect (x, 20, 50, 50);//draw rectangle
-	
-	
-	ctx2.restore();	//restore the canvas state
-	x += 1;	//increment the x position by some number
-	var loopTimer = setTimeout ('draw2 ('+x+', '+y+')', 10);
-		//https://www.youtube.com/watch?v=hUCT4b4wa-8
-	ctx2.arc(x, 150, 60, 0, Math.PI*2, false);
-	ctx2.stroke();	
-	
-	}
 	//drawing into third canvas
-	//window.onload = draw3; //Execute draw function when DOM is ready
+	
+window.onload =draw3;
 	function draw3 () {
 	var canvasthree = document.getElementById("canvas3")//reference the canvas on page	
 	var ctx3 = canvasthree.getContext("2d"); //establish a 2D context for the canvas
-	ctx3.font = "italic bold 56px Arial, sans-serif";
-	//ctx3.fillText("Text On Canvas", 50, 50);
-	/*ctx3.fillText("Text On Canvas", 50, 50);
-	ctx3.strokeText ("Text On Canvas", 50, 50);*/
+	/*ctx3.fillStyle = '#F064';
+	ctx3.font = "italic bold 20px Arial, sans-serif";
+	ctx3.fillText("Text On Canvas", 50, 50);
+		
+	ctx3.strokeText ("Text On Canvas", 50, 50);*/	
 	}
 </script>
 </head>
