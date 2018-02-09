@@ -1,74 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CanvasDraw</title>
-     <link rel="stylesheet" href="style.css" type="text/css" />
-  <style type="text/css">
-    canvas {border: #368 1px solid;}
-   
-  </style>
-	
-<script type="application/javascript" language="javascript">
-	
-window.onload = draw; //Execute draw function when DOM is ready
-	//Creating leather pattern
-	var leather = new Image();
-	leather.src = "https://user-images.githubusercontent.com/34121390/35948226-6bd7e9c6-0c20-11e8-8706-240ff1d4d46d.png";
-function draw() {
-  //Assign our canvas element to a variable
-  var canvas = document.getElementById("canvas1");
-  
-  //Create the HTML5 context object to enable draw methods
-  var ctx = canvas.getContext("2d");
-  //Draw gradient rectangles
-	
-	
-	
-	
-  //fillStyle(r, g, b, alpha);
-  ctx.fillStyle="rgba(0, 200, 0, 1)";
-  //fillRect(X, Y, width, height);
-  ctx.fillRect(36, 10, 22, 22);
-  ctx.fillStyle="rgba(0, 0, 200, 1)";
-  //fillRect(X, Y, width, height);
-  ctx.fillRect(36, 50, 22, 22);
-  //drawing triangular
-  ctx.beginPath();
-  ctx.moveTo(100, 50);
-  ctx.lineTo(130, 100);
-  ctx.lineTo(70, 100);
-  ctx.closePath();
-  ctx.stroke();
-  // another shape
-  ctx.beginPath();
-  ctx.moveTo(72, 60);
-  ctx.lineTo(85, 72);
-  ctx.lineTo(71, 94);
-  ctx.lineTo(50, 70);
-  ctx.lineTo(65, 40);
-  ctx.fillStyle="rgba(200, 36, 70, 0.5)";
-  ctx.fill();
-  //another shape for the logo, the ear
-  ctx.beginPath();
-  ctx.moveTo(128, 60);
-  ctx.lineTo(115, 72);
-  ctx.lineTo(128, 94);
-  ctx.lineTo(150, 70);
-  ctx.lineTo(135, 40);
-  ctx.fill(); 
-	//draw gradient rectangles
-	var g1 =  ctx.createLinearGradient(0, 0, 100, 0);
-	ctx.fillStyle="rgba(0, 0, 200, .3)";
-	g1.addColorStop(0, "blue");//color stop beginning
-	g1.addColorStop(0.5, "red");//color stop end
-	g1.addColorStop(1, "black");//color stop end
-	
-	ctx.fillStyle = g1;
-	ctx.strokeStyle = "yellow";
-	ctx.lineWidth = 10;
-       //fillRect(X, Y, width, height);
-	ctx.fillRect(0, 150, 100, 100);
-        ctx.strokeRect(0, 150, 100, 100);
+	<title>CanvasDraw</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<style type="text/css">
+		canvas {border: #368 1px solid;}
+	</style>
+	<script type="application/javascript" language="javascript">
+	   window.onload = draw; //Execute draw function when DOM is ready
+	   var leather = new Image(); //Creating leather pattern
+	   leather.src = "https://user-images.githubusercontent.com/34121390/35948226-6bd7e9c6-0c20-11e8-8706-240ff1d4d46d.png";
+		function draw() { // Draw function
+		var canvas = document.getElementById("canvas1"); //Assign our canvas element to a variable
+		var ctx = canvas.getContext("2d"); //Create the HTML5 context object to enable draw methods
+		//Draw gradient rectangles
+		  ctx.fillStyle="rgba(0, 200, 0, 1)"; //fillStyle(r, g, b, alpha);
+		  ctx.fillRect(36, 10, 22, 22);  //fillRect(X, Y, width, height);
+		  ctx.fillStyle="rgba(0, 0, 200, 1)";
+		  ctx.fillRect(36, 50, 22, 22);  //fillRect(X, Y, width, height);
+			  //drawing triangular	
+			  ctx.beginPath(); 
+			  ctx.moveTo(100, 50);
+			  ctx.lineTo(130, 100);
+			  ctx.lineTo(70, 100);
+			  ctx.closePath();
+			  ctx.stroke();
+				  // Second shape
+				  ctx.beginPath();
+				  ctx.moveTo(72, 60);
+				  ctx.lineTo(85, 72);
+				  ctx.lineTo(71, 94);
+				  ctx.lineTo(50, 70);
+				  ctx.lineTo(65, 40);
+				  ctx.fillStyle="rgba(200, 36, 70, 0.5)";
+				  ctx.fill();
+		  //Third shape for the logo, the ear
+		  ctx.beginPath();
+		  ctx.moveTo(128, 60);
+		  ctx.lineTo(115, 72);
+		  ctx.lineTo(128, 94);
+		  ctx.lineTo(150, 70);
+		  ctx.lineTo(135, 40);
+		  ctx.fill(); 
+			//draw gradient rectangles
+			var g1 =  ctx.createLinearGradient(0, 0, 100, 0);
+			ctx.fillStyle="rgba(0, 0, 200, .3)";
+			g1.addColorStop(0, "blue");//color stop beginning
+			g1.addColorStop(0.5, "red");//color stop end
+			g1.addColorStop(1, "black");//color stop end
+				ctx.fillStyle = g1;
+				ctx.strokeStyle = "yellow";
+				ctx.lineWidth = 10;
+				ctx.fillRect(0, 150, 100, 100); //fillRect(X, Y, width, height);
+		        	ctx.strokeRect(0, 150, 100, 100);
 	
 	//second box with gradient
 	
