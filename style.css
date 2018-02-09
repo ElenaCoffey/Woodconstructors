@@ -1,44 +1,45 @@
 p{ line-height: 1em; }
-h1, h2, h3, h4{
-    color: orange;
-	font-weight: normal;
-	line-height: 1.1em;
-	margin: 0 0 .5em 0;
-}
+	h1, h2, h3, h4{
+	    color: orange;
+		font-weight: normal;
+		line-height: 1.1em;
+		margin: 0 0 .5em 0;
+	}
 h1{ font-size: 1.7em; }
 h2{ font-size: 1.5em; }
-a{
-	color: black;
-	text-decoration: none;
-}
-	a:hover,
-	a:active{ text-decoration: underline; }
+	a{
+		color: black;
+		text-decoration: none;
+	}
+		a:hover,
+		a:active{ text-decoration: underline; }
 
-/* you can structure your code's white space so that it is as readable for when you come back in the future or for other people to read and edit quickly */
+/* you can structure your code's white space so that it is as readable
+for when you come back in the future or for other people to read and edit quickly */
 
-body{
-    font-family: arial; font-size: 80%; line-height: 1.2em; width: 100%; margin: 0; background: #eee;
-    font-weight: normal;
-}
+	body{
+	    font-family: arial; font-size: 80%; line-height: 1.2em; width: 100%; margin: 0; background: #eee;
+	    font-weight: normal;
+	}
 /* you can but your code all in one line like above */
 #page{ margin: 20px; }
 
 /* or on different lines like below */
-#logo{
-	width: 35%;
-	margin-top: 5px;
-	font-family: georgia;
-	display: inline-block;
-	text-shadow: 2px 2px green;
-}
+	#logo{
+		width: 35%;
+		margin-top: 5px;
+		font-family: georgia;
+		display: inline-block;
+		text-shadow: 2px 2px green;
+	}
 /* but try and be as consist possible */
 #nav-links {margin-top:10px;}
-#nav{
-	width: 60%;
-	display: inline-block;
-	text-align: right;
-	float: right;
-}
+	#nav{
+		width: 60%;
+		display: inline-block;
+		text-align: right;
+		float: right;
+	}
 	#nav ul{}
 		#nav ul li{
 			display: inline-block;
@@ -91,7 +92,6 @@ footer {
 }
 
 /* multiple styles seperated by a , */
-
 ul li a{ box-shadow: 0px 1px 1px #999; }
 
 myHero {
