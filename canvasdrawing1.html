@@ -7,9 +7,9 @@
 		canvas {border: #368 1px solid;}
 	</style>
 	<script type="application/javascript" language="javascript">
-	   window.onload = draw; //Execute draw function when DOM is ready
-	   var leather = new Image(); //Creating leather pattern
-	   leather.src = "https://user-images.githubusercontent.com/34121390/35948226-6bd7e9c6-0c20-11e8-8706-240ff1d4d46d.png";
+		   window.onload = draw; //Execute draw function when DOM is ready
+		   var leather = new Image(); //Creating leather pattern
+		   leather.src = "https://user-images.githubusercontent.com/34121390/35948226-6bd7e9c6-0c20-11e8-8706-240ff1d4d46d.png";
 	     function draw() { // Draw function
 		var canvas = document.getElementById("canvas1"); //Assign our canvas element to a variable
 		var ctx = canvas.getContext("2d"); //Create the HTML5 context object to enable draw methods
@@ -102,7 +102,7 @@
 <body>
 	<a href="https://elenacoffey.github.io/Woodconstructors/index.html">Visit home page</a>
 	<div id="page">
-		<div id="logo"> <h1><a href="/">My First Website</a></h1>  </div> // Heading container
+		<div id="logo"> <h1><a href="/">Canvas Drawing 1</a></h1>  </div> <!--header container-->
 		<div id="nav">
 			<ul>
 				<li class="red"><a href="#/home.html">Home</a></li>
@@ -123,6 +123,6 @@
 		<button onclick="draw2(0, 0);">Animate the drawing</button> <!--Button for canvas#2-->
 
 		<footer > <p> Webpage made by <a href="/" target="_blank">Elena Coffey</a> </p> </footer> <!--Footer-->		
-	</div>
+	
 </body>
 </html>
