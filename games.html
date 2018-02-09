@@ -1,25 +1,14 @@
-
-
-    <!DOCTYPE html>
-
-<html>
-    
-<head>
-        
-<meta charset="utf-8">
-       
- <title>Games</title>
-     <link rel="stylesheet" href="style.css" type="text/css" />
-</head>
-    
+<!DOCTYPE html>
+<html>   
+	<head>       
+		<meta charset="utf-8">      
+		<title>Games</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>   
 <body>
-
-
- <a href="https://elenacoffey.github.io/Woodconstructors/index.html">Visit home page</a>
-<div id="page">
-		<div id="logo">
-			<h1><a href="/">My First Website</a></h1>
-		</div>
+   <a href="https://elenacoffey.github.io/Woodconstructors/index.html">Visit home page</a>
+   <div id="page">
+		<div id="logo"> <h1><a href="/">My First Website</a></h1> </div>
 		<div id="nav">
 			<ul>
 				<li class="red"><a href="#/home.html">Home</a></li>
@@ -27,80 +16,56 @@
 				<li class="yellow"><a href="#/contact.html">Contact</a></li>
 			</ul>	
 		</div>
-		<div id="content">
-			<h2>Home</h2>
-			<p>
-				This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
-			</p>
-			<p> 
-				I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about). 
-			</p>
-		</div>
-		<div id="footer">
-			<p>
-				Webpage made by <a href="/" target="_blank">Elena Coffey</a>
-			</p>
-		</div>
+	<div id="content">
+		<h2>Home</h2>
+		<p> This is my first webpage! I was able to code all the HTML and CSS in order to make it.
+		    Watch out world of web design here I come!</p>
+		<p> I can use my skills here to create websites for my business, my friends and family, 
+		    my C.V, blog or articles. As well as any games or more experiment stuff (which is what
+		    the web is really all about).</p>
 	</div>
-	
+   </div>
 	<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.</canvas>
-
+		Your browser does not support the HTML5 canvas tag.</canvas>
 <script>
-var sun = new Image();
-var moon = new Image();
-var earth = new Image();
-function init() {
-  sun.src = 'https://mdn.mozillademos.org/files/1456/Canvas_sun.png';
-  moon.src = 'https://mdn.mozillademos.org/files/1443/Canvas_moon.png';
-  earth.src = 'https://mdn.mozillademos.org/files/1429/Canvas_earth.png';
-  window.requestAnimationFrame(draw);
-}
-
-function draw() {
-  var ctx = document.getElementById('canvas').getContext('2d');
-
-  ctx.globalCompositeOperation = 'destination-over';
-  ctx.clearRect(0, 0, 300, 300); // clear canvas
-
-  ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
-  ctx.strokeStyle = 'rgba(0, 153, 255, 0.4)';
-  ctx.save();
-  ctx.translate(150, 150);
-
-  // Earth
-  var time = new Date();
-  ctx.rotate(((2 * Math.PI) / 60) * time.getSeconds() + ((2 * Math.PI) / 60000) * time.getMilliseconds());
-  ctx.translate(105, 0);
-  ctx.fillRect(0, -12, 50, 24); // Shadow
-  ctx.drawImage(earth, -12, -12);
-
-  // Moon
-  ctx.save();
-  ctx.rotate(((2 * Math.PI) / 6) * time.getSeconds() + ((2 * Math.PI) / 6000) * time.getMilliseconds());
-  ctx.translate(0, 28.5);
-  ctx.drawImage(moon, -3.5, -3.5);
-  ctx.restore();
-
-  ctx.restore();
-  
-  ctx.beginPath();
-  ctx.arc(150, 150, 105, 0, Math.PI * 2, false); // Earth orbit
-  ctx.stroke();
- 
-  ctx.drawImage(sun, 0, 0, 300, 300);
-
-  window.requestAnimationFrame(draw);
-}
-
+	var sun = new Image();
+	var moon = new Image();
+	var earth = new Image();
+	function init() {
+		  sun.src = 'https://mdn.mozillademos.org/files/1456/Canvas_sun.png';
+		  moon.src = 'https://mdn.mozillademos.org/files/1443/Canvas_moon.png';
+		  earth.src = 'https://mdn.mozillademos.org/files/1429/Canvas_earth.png';
+		  window.requestAnimationFrame(draw);
+	}
+	function draw() {
+		  var ctx = document.getElementById('canvas').getContext('2d');
+		  ctx.globalCompositeOperation = 'destination-over';
+		  ctx.clearRect(0, 0, 300, 300); // clear canvas
+		  ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+		  ctx.strokeStyle = 'rgba(0, 153, 255, 0.4)';
+		  ctx.save();
+		  ctx.translate(150, 150);
+		  var time = new Date(); 
+			// Earth
+			  ctx.rotate(((2 * Math.PI) / 60) * time.getSeconds() + ((2 * Math.PI) / 60000) * time.getMilliseconds());
+			  ctx.translate(105, 0);
+			  ctx.fillRect(0, -12, 50, 24); // Shadow
+			  ctx.drawImage(earth, -12, -12);
+		// Moon
+		  ctx.save();
+		  ctx.rotate(((2 * Math.PI) / 6) * time.getSeconds() + ((2 * Math.PI) / 6000) * time.getMilliseconds());
+		  ctx.translate(0, 28.5);
+		  ctx.drawImage(moon, -3.5, -3.5);
+		  ctx.restore();
+		  ctx.restore();
+		  ctx.beginPath();
+		  ctx.arc(150, 150, 105, 0, Math.PI * 2, false); // Earth orbit
+		  ctx.stroke();
+		  ctx.drawImage(sun, 0, 0, 300, 300);
+		  window.requestAnimationFrame(draw);
+	}
 init();
-</script>
-	
-	
-   
+</script>	
+	<div id="footer"> <p> Webpage made by Elena Coffey <a href="/" target="_blank">Elena Coffey</a> </p> </div>     
 </body>
-
-</html>
-    
-  </body>
 </html>
