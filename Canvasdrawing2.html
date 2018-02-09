@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <title>CanvasDraw</title>
+	<title>CanvasDraw</title>
      	<link rel="stylesheet" href="style.css" type="text/css" />
-	
-<style type="text/css">
-	canvas {border: #368 1px solid;} 
-</style>
+	<style type="text/css"> <!--Style -->
+		canvas {border: #368 1px solid;} 
+	</style>
 	
 	<script type="application/javascript" language="javascript">	
-	window.onload = draw; //Execute draw function when DOM is ready
-	
-	function draw() { // function for drawing on canvas
-		var canvas = document.getElementById("canvas1"); //Assign our canvas element to a variable
-		var ctx = canvas.getContext("2d");  //Create the HTML5 context object to enable draw methods	
-		}
-	
-	 function draw2 (x, y) { //drawing into second canvas
-		 var canvastwo = document.getElementById("canvas2")//reference the canvas on page	
-		 var ctx2 = canvastwo.getContext("2d"); //establish a 2D context for the canvas
-		 //https://www.youtube.com/watch?v=hUCT4b4wa-8
-		}	
-	</script>
-	
+		window.onload = draw; //Execute draw function when DOM is ready
+
+		function draw() { // function for drawing on canvas
+			var canvas = document.getElementById("canvas1"); //Assign our canvas element to a variable
+			var ctx = canvas.getContext("2d");  //Create the HTML5 context object to enable draw methods	
+			}
+
+		 function draw2 (x, y) { //drawing into second canvas
+			 var canvastwo = document.getElementById("canvas2")//reference the canvas on page	
+			 var ctx2 = canvastwo.getContext("2d"); //establish a 2D context for the canvas
+			 //https://www.youtube.com/watch?v=hUCT4b4wa-8
+			}	
+	</script>	
 </head>
-  
-  <!-- BODY   -->
   
 <body>
 	<a href="https://elenacoffey.github.io/Woodconstructors/index.html">Visit home page</a> <div id="page">
@@ -39,19 +35,19 @@
 			<li class="yellow"><a href="#/contact.html">Contact</a></li>
 		</ul>			
 	</div>
-<div id="content">
-	<h2>Canvas drawing 2</h2> <!-- Heading  -->
+	<div id="content">
+		<h2>Canvas drawing 2</h2> <!-- Heading  -->
 		<p>On this page I continue to show drawings on canvas with JavaScript.</p>
 		<p> Each of my progress is reflected here. I use varuous online resources to learn how to code.  </p>
-</div>
+	</div>
 	
-<canvas id="canvas1" width = "400" height="300"></canvas> <!--1st canvas -->
-<canvas id="canvas2" width = "400" height="300"></canvas> <!--2nd canvas -->	
-<button onclick="draw2(0, 0);">Animate the drawing</button> <!--Button for canvas#2-->
+	<canvas id="canvas1" width = "400" height="300"></canvas> <!--1st canvas -->
+	<canvas id="canvas2" width = "400" height="300"></canvas> <!--2nd canvas -->	
+	<button onclick="draw2(0, 0);">Animate the drawing</button> <!--Button for canvas#2-->
 
-<div>	
-	<footer > <p>Webpage made by <a href="/" target="_blank">Elena Coffey</a></p> </footer> <!--Footer-->
-</div>
+	<div>	
+		<footer > <p>Webpage made by <a href="/" target="_blank">Elena Coffey</a></p> </footer> <!--Footer-->
+	</div>
 	
 </body>
 </html>
