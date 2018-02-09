@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CanvasDraw</title>
+     <link rel="stylesheet" href="style.css" type="text/css" />
+  <style type="text/css">
+    canvas {border: #368 1px solid;}
+   
+  </style>
+	
+<script type="application/javascript" language="javascript">
+	
+window.onload = draw; //Execute draw function when DOM is ready
+	
+function draw() {
+  //Assign our canvas element to a variable
+  var canvas = document.getElementById("canvas1");
+  
+  //Create the HTML5 context object to enable draw methods
+  var ctx = canvas.getContext("2d");
+
+	
+	
+	
+	
+  
+	
+
+	
+	
+
+	
+
+	
+}
+	//drawing into second canvas
+	function draw2 (x, y) {
+	var canvastwo = document.getElementById("canvas2")//reference the canvas on page	
+	var ctx2 = canvastwo.getContext("2d"); //establish a 2D context for the canvas
+	
+		//https://www.youtube.com/watch?v=hUCT4b4wa-8
+	}
+	
+</script>
+</head>
+  
+  <!-- BODY   -->
+  
+<body>
+  
+  <a href="https://elenacoffey.github.io/Woodconstructors/index.html">Visit home page</a>
+  <div id="page">
+		<div id="logo">
+			<h1><a href="/">Canvas Drawing 2</a></h1>
+		</div>
+		<div id="nav">
+			<ul>
+				<li class="red"><a href="#/home.html">Home</a></li>
+				<li class="orange"><a href="#/about.html">About</a></li>
+				<li class="yellow"><a href="#/contact.html">Contact</a></li>
+			</ul>	
+		</div>
+		<div id="content">
+			<h2>Canvas drawing 2</h2>
+			<p>
+				On this page I continue to show drawings on canvas with JavaScript.
+			</p>
+			<p> 
+				Each of my progress is reflected here. I use varuous online resources to learn how to code.  
+			</p>
+		</div>
+		
+	</div>
+  <!--1st canvas -->
+<canvas id="canvas1" width = "400" height="300"></canvas>
+  <!--2nd canvas -->
+<canvas id="canvas2" width = "400" height="300"></canvas>
+	<!--Button for canvas#2-->
+<button onclick="draw2(0, 0);">Animate the drawing</button>
+
+	
+	</div>
+		<!--Footer-->
+		
+		
+			<footer >
+			<p>
+				Webpage made by <a href="/" target="_blank">Elena Coffey</a>
+			</p>
+			</footer>
+		
+	</div>
+</body>
+</html>
