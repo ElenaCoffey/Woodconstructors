@@ -12,6 +12,7 @@
 		function draw() { // function for drawing on canvas
 			var canvas = document.getElementById("canvas1"); //Assign our canvas element to a variable
 			var ctx = canvas.getContext("2d");  //Create the HTML5 context object to enable draw methods		
+			ctx.globalCompositeOperation = "xor";
 			ctx.globalAlpha = .5;
 			ctx.fillStyle = '#KL0';
 			ctx.fillRect(20, 100, 50, 50);
