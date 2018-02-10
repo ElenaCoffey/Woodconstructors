@@ -12,7 +12,11 @@
 		function draw() { // function for drawing on canvas
 			var canvas = document.getElementById("canvas1"); //Assign our canvas element to a variable
 			var ctx = canvas.getContext("2d");  //Create the HTML5 context object to enable draw methods	
-			}
+			ctx.fillStyle = '#FC0';
+		        ctx.fillRect(50, 50, 100, 100);
+			ctx.rotate(.1);
+			ctx.fillRect(200, 50, 100, 100);
+		        }
 
 		 function draw2 (x, y) { //drawing into second canvas
 			 var canvastwo = document.getElementById("canvas2")//reference the canvas on page	
