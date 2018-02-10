@@ -12,10 +12,10 @@
 		function draw() { // function for drawing on canvas
 			var canvas = document.getElementById("canvas1"); //Assign our canvas element to a variable
 			var ctx = canvas.getContext("2d");  //Create the HTML5 context object to enable draw methods		
-			ctx.globalCompositeOperation = "xor";
 			ctx.globalAlpha = .5;
 			ctx.fillStyle = '#KL0';
 			ctx.fillRect(20, 100, 50, 50);
+			ctx.globalCompositeOperation = "xor"; //global composition of two recs
 			ctx.translate(0, 50);
 			ctx.fillRect(90, 100, 50, 50);
 			ctx.fillStyle = '#FC0';
