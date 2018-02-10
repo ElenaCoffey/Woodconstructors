@@ -22,7 +22,7 @@
 			ctx.fillRect(90, 30, 50, 50);
 			ctx.setTransform(1, 0, .5, 1, 0, 0);
 			ctx.fillRect(120, 30, 50, 50);
-			var src = ctx.getImageData(30, 150, 50 ,50);
+			var src = ctx.getImageData(50, 125, 100 ,100);
 			var copy = ctx.createImageData(src.width, src.height);
 			for (var i=0; i < copy.data.length; i++) {
 				copy.data[i] = src.data[i];
