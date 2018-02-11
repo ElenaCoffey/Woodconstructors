@@ -43,7 +43,12 @@ p{  line-height: 1em; }
 	
 /* you can but your code all in one line like above */
 
-#official-info { }
+#official-info { background: rgb(230, 230, 230);
+                 width: 70%;
+                 height: 180px;
+                 overflow-y: auto;
+                 overflow-x: hidden;
+                 margin: 15px 0px 10px 6px; }
 
 section { border: 1px solid gray;
 	  padding: 20px; }
