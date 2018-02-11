@@ -50,17 +50,12 @@ p{  line-height: 1em; }
                  overflow-x: hidden;
                  margin: 15px 0px 10px 6px; }
 
-section { border: 1px solid gray;
-	  padding: 20px; }
-
-section {  margin-top: 15px; }
-
-#content-articles {	margin: 15px 15px 15px 15px;
-			background: white;
-			padding: 20px;
-			clear: both;  
-			border: 1px solid gray;
-			width: 70%;	}
+section {  margin: 15px 15px 15px 15px;
+	   background: white;
+	   padding: 20px;
+	   clear: both;  
+	   border: 1px solid gray;
+	   width: 70%;	}
 
 /* PICTURES */
 #sunset { width: 220px;
