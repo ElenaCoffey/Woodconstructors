@@ -27,6 +27,7 @@ myHero{ display: block;
 	}
 #container { width: 800px;
              margin: auto;
+	     padding 10px;
 	     border: 1px solid yellow;
         }
 #content-intro{ margin: 15px 15px 15px 15px;
