@@ -123,5 +123,6 @@ footer p{	text-align: right;
 footer {	border-bottom: 1px #ccc solid;
 		margin-bottom: 10px;
 		margin-top: 10px;
+		clear: both;
 	}
 
