@@ -25,7 +25,7 @@ myHero{ display: block;
   }
 /*CONTENT*/
 #logo{  width: 35%;
-	margin-top: 5px;
+	margin-top: 15px 10px 15px 10px;
 	font-family: georgia;
 	display: inline-block;
 	text-shadow: 2px 2px green;
