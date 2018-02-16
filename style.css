@@ -15,7 +15,8 @@ body{    font-family: arial;
 	 margin: 0; background: #eee;
 	 font-weight: normal;
 	}
-#container { width: 800px;
+#container { width: width;
+	     background-color: #8484BA;
              margin: auto;
 	     padding 15px;
 	     border: 2px solid gray;
