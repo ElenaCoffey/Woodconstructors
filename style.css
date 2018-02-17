@@ -37,10 +37,10 @@ myHero{ display: block;
 	}
 
 #content-intro{ margin: 15px 15px 15px 15px;
-		background: white;
+		background: #FFF6DD;;
 		padding: 20px;
 		clear: both;
-		border: 1px solid gray;
+		border: 1px solid #B4A1CC;
 		width: 70%;
 }
 /* PARAGRAPHS*/
@@ -50,8 +50,7 @@ p{  line-height: 1em; }
 	
 /* you can but your code all in one line like above */
 
-#official-info { background: #FFF6DD;
-	         width: 45%;
+#official-info { width: 45%;
                  margin: 15px 0px 10px 6px;
 		 padding: 5px;}
 
