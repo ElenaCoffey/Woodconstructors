@@ -40,7 +40,8 @@ myHero{ display: block;
 		background: #FFF6DD;;
 		padding: 5px;
 		clear: both;
-		border: 1px solid #B4A1CC;
+	        border-top: 1px solid #B4A1CC;
+	        border-right: 2px dotted #B4A1CC;
 		width: 45%;
 }
 /* PARAGRAPHS*/
