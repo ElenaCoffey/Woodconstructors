@@ -64,7 +64,7 @@ section {  margin: 1px 20px 20px 0px;
 	   background: white;
 	   padding: 20px;
 	   clear: both;  
-	   border: 1px solid gray;
+	   border-top: 1px solid #494991;
 	   width: 60%;	
            height: 220px;
            overflow-y: auto;
