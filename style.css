@@ -90,7 +90,7 @@ a:link, a:visited {
     background-color: #B4A1CC ;
     color: white;
     padding: 14px 50px;
-    margin: 1px;	
+    margin: 1px 1px 1px 0px;	
     text-align: center;
     text-decoration: none;
     display: inline-block;
