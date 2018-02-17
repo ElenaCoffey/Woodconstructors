@@ -32,7 +32,7 @@ myHero{ display: block;
 	background-color: #dddddd;
 	padding: 50px;
 	font-size: 30px;
-	margin: 10px;
+	margin: 20px 20px 5px 20px;
   }
 /*CONTENT*/
 #logo{  width: 35%;
