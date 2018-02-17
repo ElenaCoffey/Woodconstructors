@@ -82,10 +82,11 @@ h1, h2, h3, h4{ color: orange;
 		margin: 0 0 .5em 0;  }
 
 /*NAVIGATION and LISTS*/
+#nav { margin: 10px 25px 5px 25px }
 a:link, a:visited {
     background-color: #B4A1CC ;
     color: white;
-    padding: 14px 35px;
+    padding: 14px 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
