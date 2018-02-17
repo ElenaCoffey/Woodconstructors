@@ -42,7 +42,7 @@ myHero{ display: block;
 	}
 
 #content-intro{ margin: 1px 0px 20px 0px;
-		background: #D1C5E0;
+		background: #FFFDE6;
 		padding: 5px;
 		clear: both;
 	        border-top: 1px solid #494991;
@@ -58,10 +58,10 @@ p{  line-height: 1em; }
 
 #official-info { margin: 15px 20px 20px 0px;
 		 padding: 5px;
-		 background-color: white;}
+		 background-color: #FFFDE6;}
 
 section {  margin: 1px 20px 20px 0px;
-	   background: white;
+	   background: #FFFDE6;
 	   padding: 20px;
 	   clear: both;  
 	   border-top: 1px solid #494991;
@@ -70,7 +70,7 @@ section {  margin: 1px 20px 20px 0px;
            overflow-y: auto;
            overflow-x: hidden;
            float: right;}
-article {  background: rgb(230, 230, 230);
+article {  background: #FFFDE6;
 	   padding: 5px; }
 /* PICTURES */
 #sunset { width: 220px;
