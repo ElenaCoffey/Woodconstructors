@@ -82,6 +82,14 @@ h1, h2, h3, h4{ color: orange;
 		margin: 0 0 .5em 0;  }
 
 /*NAVIGATION and LISTS*/
+a:link, a:visited {
+    background-color: #B4A1CC ;
+    color: white;
+    padding: 14px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
 
 a{	color: black;
 	text-decoration: none;
@@ -91,30 +99,7 @@ a:active{ text-decoration: underline; }
 
 /* multiple styles seperated by a , */
 
-ul li a{ box-shadow: 0px 1px 1px #999; }
 
-#nav{	width: 100%;
-	display: inline-block;
-	text-align: auto;
-	float: auto; }
-
-#nav {margin: 10px; }
-
-#nav ul li{  display: inline-block;
-	     height: 62px; }
-
-#nav ul li a{	padding: 20px;
-		background: orange;
-		color: white;  }
-#nav ul li a:hover{  background-color: #ffb424;
-		     box-shadow: 0px 1px 1px #666; }
-#nav ul li a:active{ background-color: #ff8f00; }
-
-		#nav ul li.red a{	background-color: red; }
-		#nav ul li.orange a{	background-color: orange;}
-		#nav ul li.yellow a{	background-color: yellow;
-					color: brown;		}
-				
 
 /* FOOTER */
 footer p{	text-align: right;
