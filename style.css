@@ -94,8 +94,8 @@ h1, h2, h3, h4{ color: orange;
 
 a:link, a:visited {
     background-color: #B4A1CC ;
-    color: white;
-    padding: 14px 50px;
+    color: #7B5CA0;
+    padding: 14px 45px;
     margin: 1px 1px 1px 0px;	
     text-align: center;
     text-decoration: none;
