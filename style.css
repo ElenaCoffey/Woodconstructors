@@ -36,12 +36,12 @@ myHero{ display: block;
 	text-shadow: 2px 2px green;
 	}
 
-#content-intro{ margin: 15px 15px 15px 15px;
+#content-intro{ margin: 1px 0px 20px 20px;
 		background: white;
 		padding: 5px;
 		clear: both;
-	        border-top: 1px solid #B4A1CC;
-	        border-right: 2px dotted #B4A1CC;
+	        border-top: 1px solid #494991;
+	        border-right: 2px dotted #494991;
 		width: 45%;
 }
 /* PARAGRAPHS*/
