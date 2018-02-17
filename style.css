@@ -32,7 +32,8 @@ myHero{ display: block;
 	background-color: #dddddd;
 	padding: 50px;
 	font-size: 30px;
-	margin: 20px 20px 5px 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
   }
 /*CONTENT*/
 #logo{  width: 35%;
