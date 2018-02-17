@@ -50,7 +50,7 @@ p{  line-height: 1em; }
 	
 /* you can but your code all in one line like above */
 
-#official-info { background: rgb(230, 230, 230);
+#official-info { background: #FFF6DD;
 	         width: 45%;
                  margin: 15px 0px 10px 6px;
 		 padding: 5px;}
