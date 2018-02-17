@@ -23,6 +23,7 @@ body{    font-family: arial;
 .flex-container { display: flex;
                   flex-direction: row;
                   background-color: #E6E6FC;
+		  margin-top: 1px;
         }
 /* or on different lines like below */
 
