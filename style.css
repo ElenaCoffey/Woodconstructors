@@ -38,10 +38,10 @@ myHero{ display: block;
 
 #content-intro{ margin: 15px 15px 15px 15px;
 		background: #FFF6DD;;
-		padding: 20px;
+		padding: 5px;
 		clear: both;
 		border: 1px solid #B4A1CC;
-		width: 70%;
+		width: 45%;
 }
 /* PARAGRAPHS*/
 /* you can structure your code's white space so that it is as readable
@@ -50,9 +50,9 @@ p{  line-height: 1em; }
 	
 /* you can but your code all in one line like above */
 
-#official-info { width: 45%;
-                 margin: 15px 0px 10px 6px;
-		 padding: 5px;}
+#official-info { margin: 15px 0px 10px 6px;
+		 padding: 5px;
+		 background-color: white;}
 
 section {  margin: 15px 15px 15px 15px;
 	   background: white;
