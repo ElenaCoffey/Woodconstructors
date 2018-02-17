@@ -24,7 +24,7 @@ body{    font-family: arial;
 .flex-container { display: flex;
 	          border-top: 1px solid #494991;
                   flex-direction: row;
-                  background-color: #E6E6FC;
+                  background: #FFFDE6;
 		  margin-top: 1px;
         }
 /* or on different lines like below */
