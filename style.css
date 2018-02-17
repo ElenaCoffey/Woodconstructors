@@ -22,7 +22,7 @@ body{    font-family: arial;
         }
 .flex-container { display: flex;
                   flex-direction: row;
-                  background-color: DodgerBlue;
+                  background-color: #E6E6FC;
         }
 /* or on different lines like below */
 
@@ -64,8 +64,8 @@ section {  margin: 1px 20px 20px 0px;
 	   padding: 20px;
 	   clear: both;  
 	   border: 1px solid gray;
-	   width: 45%;	
-           height: 180px;
+	   width: 55%;	
+           height: 220px;
            overflow-y: auto;
            overflow-x: hidden;
            float: right;}
