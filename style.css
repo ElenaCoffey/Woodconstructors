@@ -21,6 +21,7 @@ body{    font-family: arial;
 	     padding: 50px;
         }
 .flex-container { display: flex;
+	          border-top: 1px solid #494991;
                   flex-direction: row;
                   background-color: #E6E6FC;
 		  margin-top: 1px;
@@ -45,7 +46,6 @@ myHero{ display: block;
 		background: #FFFDE6;
 		padding: 5px;
 		clear: both;
-	        border-top: 1px solid #494991;
 	        border-right: 2px dotted #494991;
 		width: 45%;
 }
@@ -64,7 +64,6 @@ section {  margin: 1px 20px 20px 0px;
 	   background: #FFFDE6;
 	   padding: 20px;
 	   clear: both;  
-	   border-top: 1px solid #494991;
 	   width: 60%;	
            height: 220px;
            overflow-y: auto;
@@ -115,7 +114,7 @@ footer p{	text-align: right;
 		color: grey;
 	}
 footer {        background-color: #FFF0C4;
-	 	borger-top: 2px solid #CFB056;
+	 	border-top: 2px solid #CFB056;
 	        border-bottom: 2px solid #CFB056;
 	        color: #CFB056;
 		margin-bottom: 10px;
