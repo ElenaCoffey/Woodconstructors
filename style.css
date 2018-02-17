@@ -16,7 +16,8 @@ body{    font-family: arial;
 	 font-weight: normal;
 	}
 #container { width: width;
-	     background-color: #8484BA;
+	      background-image: url("https://user-images.githubusercontent.com/34121390/36338263-2a65ad0c-135f-11e8-9fc2-905c483e025e.png");
+	    /*background-color: #8484BA;*/
              margin: 20px 20px 1px 20px;
 	     padding: 50px;
         }
