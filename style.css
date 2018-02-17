@@ -36,8 +36,8 @@ myHero{ display: block;
 	text-shadow: 2px 2px green;
 	}
 
-#content-intro{ margin: 1px 0px 20px 20px;
-		background: white;
+#content-intro{ margin: 1px 0px 20px 0px;
+		background: #D1C5E0;
 		padding: 5px;
 		clear: both;
 	        border-top: 1px solid #494991;
