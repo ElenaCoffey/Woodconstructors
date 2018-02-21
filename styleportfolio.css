@@ -1,0 +1,46 @@
+#slogan {width: 100%;
+         background: salmon;
+         height: 200px;
+      	color: white;
+      	margin: 5px 10px 15px 0px;
+      	font-family: georgia;
+      	display: inline-block;}
+
+ul { list-style-type: none;
+    margin: 0;
+    padding: 15px 60px 10px 60px;
+    
+    display: inline-block;
+    *display: inline;
+    zoom: 1}
+    
+p { list-style-type: none;
+    margin: 0;
+    padding: 15px 60px 10px 60px;
+    
+    display: inline-block;
+    *display: inline;
+    zoom: 1}   
+img {
+    float: left;
+}    
+#work { background: lightblue; 
+        height: 150px;
+        color: gray;
+        margin: 10px 0px 20px 0px;
+        padding: 5px 15px 15px;
+        border: solid gray;
+}
+#connections {background: gray;
+              color: black;
+}
+#pcredo {background: lightblue;}
+footer  {position:relative;
+         bottom:0;
+         width:100%;
+         height:60px;   /* Height of the footer */
+         background:gray;
+        color: white
+        
+}
+h4 {margin: 20px 100px 5px 50px}
