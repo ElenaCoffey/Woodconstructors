@@ -2,11 +2,9 @@
 #slogan {width: 100%;
          background: salmon;
          height: 200px;
-      	color: white;
-      	margin: 5px 10px 15px 0px;
-      	font-family: georgia;
-      	display: inline-block;}
-
+      	 margin: 5px 10px 15px 0px;
+	 display: inline-block;}
+#head-slogan credo{font-family: georgia; color: white;}
 ul { list-style-type: none;
     margin: 0;
     padding: 15px 60px 10px 60px;
