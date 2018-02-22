@@ -1,46 +1,111 @@
-#slogan {width: 100%;
-         background: salmon;
+:root {
+    --bluewood-bg-color: url(https://user-images.githubusercontent.com/34121390/36499686-eb9e3f44-16f6-11e8-9e87-6973b3931c0e.png)no-repeat top right ; 
+
+   
+    --water-bg-color: url(https://user-images.githubusercontent.com/34121390/36502767-c9e6c57a-16ff-11e8-82d3-6b9737b06c90.png)no-repeat center fixed; 
+   
+    --bricks-bg-color: url(https://user-images.githubusercontent.com/34121390/36501020-cd8f09da-16fa-11e8-9532-418147dae02a.png) no-repeat top right;
+  
+    --yellowwood-bg-color: url(https://user-images.githubusercontent.com/34121390/36503210-2e9e002c-1701-11e8-8ef6-d79a7785b0d2.png) no-repeat top right;
+  
+}
+
+html {
+    background:var(--water-bg-color) ; 
+    background-size: cover;
+     
+}
+
+#growyrbus {width: 97.5%;
+    background:var(--bricks-bg-color);
+    background-repeat:no-repeat;
+   background-position:  left top;
+   background-size: cover;
          height: 200px;
       	color: white;
       	margin: 5px 10px 15px 0px;
+      	padding: 20px;
       	font-family: georgia;
-      	display: inline-block;}
+      	display: inline-block;
+        border-radius: 25px;
+}
+#Credentials {background: var(--yellowwood-bg-color);
+         padding: 0px 20px;
+          color: white; 
+          border-radius: 25px;
+          background-position:  left bottom;
+          background-size: cover;
+          height: 50px;
+}
 
+
+
+img {margin: 20px 20px 20px 20px;
+     border: solid white;
+     float:left;
+}
+
+#customer-feedback { background: var( --yellowwood-bg-color);;
+                    margin: 20px 0px;
+                    border-radius: 25px;
+                    background-position:  left bottom;
+                    background-size: cover;
+                    color: white;
+                    height: 150px;
+}
+#myprojects {background: var(--bluewood-bg-color);
+        border-radius: 25px;
+        background-position:  left bottom;
+        background-size: cover;
+        height: 250px;
+        color: gray;
+        margin: 10px 0px 20px 0px;
+        padding: 5px 15px 15px;
+}
+#linkstosites {background: var( --yellowwood-bg-color);
+              color: white;
+              border-radius: 25px;
+              width: 100%;
+             
+}
 ul { list-style-type: none;
     margin: 0;
     padding: 15px 60px 10px 60px;
     
     display: inline-block;
-    *display: inline;
     zoom: 1}
     
-p { list-style-type: none;
-    margin: 0;
-    padding: 15px 60px 10px 60px;
-    
-    display: inline-block;
-    *display: inline;
-    zoom: 1}   
-img {
-    float: left;
-}    
-#work { background: lightblue; 
-        height: 150px;
-        color: gray;
-        margin: 10px 0px 20px 0px;
-        padding: 5px 15px 15px;
-        border: solid gray;
+a {
+    color: white;
 }
-#connections {background: gray;
-              color: black;
+/* visited link */
+a:visited {
+    color: yellow;
 }
-#pcredo {background: lightblue;}
+
+/* mouse over link */
+a:hover {
+    color: lightblue;
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+}
+
+
 footer  {position:relative;
          bottom:0;
          width:100%;
          height:60px;   /* Height of the footer */
-         background:gray;
-        color: white
+         background: var(--yellowwood-bg-color);
+        background-size: cover;
+         color: white;
+         border-radius: 25px;
+         margin: 20px 0px;
+         float:right;
         
 }
-h4 {margin: 20px 100px 5px 50px}
+h4 {margin: 20px 100px 5px 50px;
+  float:right;
+}
