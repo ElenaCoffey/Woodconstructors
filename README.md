@@ -1,2 +1,3 @@
 # Woodconstructors
-Online store for selling woodwork constructors for children. 
+Hi, 
+This project is just a trial for my HTML, CSS, and JavaScript skills. 
